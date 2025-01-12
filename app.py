@@ -38,20 +38,13 @@ class Window(QMainWindow, Ui_mainForm):
         self.cb_id.clear()
 
         machine_ranges = {
-            "IMM": (1, moldeo, 100),
-            "ROBOT": (1, moldeo, 200),
-            "THERMO": (1, moldeo, 300),
-            "MAGUIRE": (1, moldeo, 400),
-            "SOFT-TRIM": (1, softrim, 500),
-            "BOOTH": (1, booth, 600),
-            "VINIL": (1, vinil, 700),
-            "T1XX": (1, t1xx, 800),
-            "CX483": (1, cx483, 900),
-            "U725": (1, u725, 1000),
-            "KXX/KM": (1, kxx, 1100),
-            "BT1CG/PERFCAR/P708": (1, bt1cg, 1200),
-            "GAP HIDDER": (1, gap_hidder, 1300),
-            "OTROS": (1, otros, 1400)
+            "DCM": (1, diecast, 100),
+            "LADLER": (1, diecast, 200),
+            "EXTRACTOR": (1, diecast, 300),
+            "SPRAYER": (1, diecast, 400),
+            "PRESS": (1, diecast, 500),
+            "FURNACE": (1, diecast, 600),
+            "OTROS": (1, otros, 700)
         }
 
         if machine_type in machine_ranges:
